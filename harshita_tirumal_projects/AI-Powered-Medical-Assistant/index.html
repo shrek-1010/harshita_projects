@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Free AI-powered Medical Assistant for symptom analysis, medical information, and emergency guidance. Powered by advanced artificial intelligence and verified medical sources.">
+    <title>Advanced AI Medical Assistant | Free Health Analysis</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1><i class="fas fa-heartbeat"></i> <i class="fas fa-brain"></i> AI Medical Assistant</h1>
+            <p>Powered by advanced AI and verified medical sources: WHO, CDC, and PubMed</p>
+        </header>
+
+        <nav>
+            <button class="nav-button active" data-target="symptom-checker">
+                <i class="fas fa-stethoscope"></i> Symptom Checker
+            </button>
+            <button class="nav-button" data-target="medical-faqs">
+                <i class="fas fa-question-circle"></i> Medical FAQs
+            </button>
+            <button class="nav-button" data-target="emergency-guide">
+                <i class="fas fa-ambulance"></i> Emergency Guide
+            </button>
+            <button class="nav-button" data-target="medicine-info">
+                <i class="fas fa-pills"></i> Medicine Info
+            </button>
+            <button class="nav-button" data-target="health-tips">
+                <i class="fas fa-apple-alt"></i> Health Tips
+            </button>
+            <button class="nav-button" data-target="voice-assistant">
+                <i class="fas fa-microphone"></i> Voice Assistant
+            </button>
+        </nav>
+
+        <main>
+            <!-- Symptom Checker Module -->
+            <section id="symptom-checker" class="module active">
+                <h2>Symptom Checker</h2>
+                <div class="input-area">
+                    <textarea id="symptoms-input" placeholder="Describe your symptoms in detail. Example: 'I have a headache and fever.'"></textarea>
+                    <button id="analyze-symptoms">Analyze Symptoms</button>
+                </div>
+                <div class="results" id="symptoms-results">
+                    <!-- Results will be displayed here -->
+                </div>
+            </section>
+
+            <!-- Medical FAQs Module -->
+            <section id="medical-faqs" class="module">
+                <h2>Medical FAQs</h2>
+                <div class="input-area">
+                    <input type="text" id="faq-search" placeholder="Ask a medical question. Example: 'What are the symptoms of diabetes?'">
+                    <button id="search-faq">Search</button>
+                </div>
+                <div class="results" id="faq-results">
+                    <!-- FAQ results will be displayed here -->
+                </div>
+                <div class="common-questions">
+                    <h3>Common Questions</h3>
+                    <ul>
+                        <li class="faq-question">What are the symptoms of COVID-19?</li>
+                        <li class="faq-question">How to lower blood pressure naturally?</li>
+                        <li class="faq-question">What causes migraines?</li>
+                        <li class="faq-question">How to manage diabetes?</li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- Emergency First-Aid Guide Module -->
+            <section id="emergency-guide" class="module">
+                <h2>Emergency First-Aid Guide</h2>
+                <div class="emergency-options">
+                    <div class="emergency-card" data-emergency="choking">
+                        <i class="fas fa-lungs"></i>
+                        <h3>Choking</h3>
+                    </div>
+                    <div class="emergency-card" data-emergency="cpr">
+                        <i class="fas fa-heartbeat"></i>
+                        <h3>CPR</h3>
+                    </div>
+                    <div class="emergency-card" data-emergency="bleeding">
+                        <i class="fas fa-tint"></i>
+                        <h3>Severe Bleeding</h3>
+                    </div>
+                    <div class="emergency-card" data-emergency="burns">
+                        <i class="fas fa-fire"></i>
+                        <h3>Burns</h3>
+                    </div>
+                    <div class="emergency-card" data-emergency="fracture">
+                        <i class="fas fa-bone"></i>
+                        <h3>Fractures</h3>
+                    </div>
+                    <div class="emergency-card" data-emergency="fainting">
+                        <i class="fas fa-dizzy"></i>
+                        <h3>Fainting</h3>
+                    </div>
+                </div>
+                <div class="results" id="emergency-results">
+                    <!-- Emergency instructions will be displayed here -->
+                </div>
+            </section>
+
+            <!-- Medicine & Prescription Assistant Module -->
+            <section id="medicine-info" class="module">
+                <h2>Medicine Information</h2>
+                <div class="input-area">
+                    <input type="text" id="medicine-search" placeholder="Enter medicine name. Example: 'Paracetamol'">
+                    <button id="search-medicine">Search</button>
+                </div>
+                <div class="results" id="medicine-results">
+                    <!-- Medicine information will be displayed here -->
+                </div>
+                <div class="common-medicines">
+                    <h3>Common Medicines</h3>
+                    <div class="medicine-tags">
+                        <span class="medicine-tag">Paracetamol</span>
+                        <span class="medicine-tag">Ibuprofen</span>
+                        <span class="medicine-tag">Aspirin</span>
+                        <span class="medicine-tag">Amoxicillin</span>
+                        <span class="medicine-tag">Omeprazole</span>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Health Tips Module -->
+            <section id="health-tips" class="module">
+                <h2>Health Tips</h2>
+                <div class="input-area">
+                    <textarea id="health-issue" placeholder="Describe your health concern or wellness goal. Example: 'I feel tired all the time.'"></textarea>
+                    <button id="get-health-tips">Get Personalized Tips</button>
+                </div>
+                <div class="results" id="health-tips-results">
+                    <!-- Health tips will be displayed here -->
+                </div>
+                <div class="health-categories">
+                    <h3>Health Categories</h3>
+                    <div class="category-buttons">
+                        <button class="category-btn" data-category="nutrition">Nutrition</button>
+                        <button class="category-btn" data-category="fitness">Fitness</button>
+                        <button class="category-btn" data-category="mental">Mental Health</button>
+                        <button class="category-btn" data-category="sleep">Sleep</button>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Voice Assistant Module -->
+            <section id="voice-assistant" class="module">
+                <h2>Voice Assistant</h2>
+                <div class="voice-interface">
+                    <div class="voice-animation">
+                        <div class="voice-wave"></div>
+                        <div class="voice-wave"></div>
+                        <div class="voice-wave"></div>
+                    </div>
+                    <button id="start-voice" class="voice-btn">
+                        <i class="fas fa-microphone"></i> Start Voice Assistant
+                    </button>
+                    <p class="voice-status">Click to start speaking</p>
+                </div>
+                <div class="voice-transcript">
+                    <h3>Transcript</h3>
+                    <p id="voice-text"></p>
+                </div>
+                <div class="results" id="voice-results">
+                    <!-- Voice assistant responses will be displayed here -->
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <div class="disclaimer">
+                <strong>Medical Disclaimer:</strong> This AI assistant provides general information and is not a substitute for professional medical advice. Always consult a qualified healthcare provider for medical concerns.
+            </div>
+            <div class="ai-disclaimer">
+                <strong>AI Notice:</strong> This medical assistant is powered by artificial intelligence and analyzes symptoms based on patterns in medical data. It is designed to be accurate but is not a diagnostic tool. The AI assistant may not account for all possible conditions or individual factors. All information is provided for educational purposes only.
+            </div>
+            <div class="credits">
+                <p>Powered by verified medical sources: WHO, CDC, PubMed</p>
+                <p>&copy; 2025 AI Medical Assistant</p>
+            </div>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html> 
