@@ -1,6 +1,6 @@
-## 📌 Girls' Tech Projects Repository
+## 📌 Tirumal Harshita Projects Repository
 
-Welcome to the **Girls' Tech Projects Repository**! 🚀 This repository showcases innovative projects in healthcare, AI, security, and data analytics, demonstrating expertise in cutting-edge technology.
+Welcome to my ** Projects Repository**! 🚀 This repository showcases innovative projects in healthcare, AI, security, and data analytics, demonstrating expertise in cutting-edge technology.
 
 ---
 
@@ -47,7 +47,7 @@ cd girls-tech-projects
 ---
 
 ### 📞 Contact Us  
-📧 Email: [example@email.com]  
+📧 Email: [tirumaharshita@gmail.com]  
 
 ---
 
